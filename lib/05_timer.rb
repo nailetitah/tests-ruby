@@ -1,5 +1,5 @@
 def time_string(t)
-	if t <= 86400
+	if t < 86400
 	return Time.at(t).utc.strftime "%H:%M:%S"
 	else
     hours = t / (60 * 60)
